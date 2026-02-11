@@ -14,10 +14,10 @@ const noMessages = [
 let noClickCount = 0;
 
 yesBtn.addEventListener("click", () => {
-  msg.textContent = "I knew you’d say yes! 💖 Can’t wait to see you on Valentine’s Day.";
-  yesBtn.style.transform = "scale(1.2)";
-  noBtn.style.display = "none";
+  // Redirect to the questions page
+  window.location.href = "questions.html";
 });
+
 
 noBtn.addEventListener("click", () => {
   if (noClickCount < noMessages.length) {
